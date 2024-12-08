@@ -1,0 +1,58 @@
+.propic
+{
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 4%;
+    border: 4px groove green;
+
+}
+
+body
+{
+    margin-top: 12%;
+    background-image:url("./back.gif") ;
+    text-align: center;
+}
+
+h1
+{
+    color:chartreuse;
+}
+
+h2
+{
+    color:greenyellow;
+}
+p
+{
+    color: white;
+}
+ul {
+    font-size: 1.4rem;
+    color:springgreen;
+    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@keyframes moveFox {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.fox-container {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 150px;
+    height: auto;
+    z-index: 1;
+    animation: moveFox 5s linear infinite;
+}
